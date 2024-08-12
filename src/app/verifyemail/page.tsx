@@ -9,7 +9,7 @@ export default function VerifyEmailPage() {
     const [token, setToken] = useState('')
 
     
-    const verifyEmail = async () => {
+    const verifyUserEmail = async () => {
        try {
          const response = await axios.post('/api/users/verifyemail', {token})
          setVerified(true)
@@ -27,9 +27,8 @@ export default function VerifyEmailPage() {
     
     useEffect(() => {
       if(token.length>0){
-        verifyEmail()
+        verifyUserEmail()
       }
-        
       }, [token])
       
 

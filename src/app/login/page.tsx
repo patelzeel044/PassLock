@@ -77,7 +77,7 @@ export default function LoginPage() {
           </button>
 
           <div className='font-semibold py-1'>
-            Don't have an Account{' '}
+            Don&apos;t have an Account{' '}
           <Link href='/signup'
           className='text-blue-700 hover:bg-blue-900 font-bold '>
             SignUp
